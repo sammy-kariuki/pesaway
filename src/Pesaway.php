@@ -24,14 +24,8 @@ class Pesaway
      * @var int $paybill
      */
     public $paybill;
-    /**
-     * The Lipa Na MPesa paybill number
-     * @var int $lipa_na_mpesa
-     */
     
-    
-	
-	
+    	
 	/**
      * Construct method
      *
@@ -48,10 +42,10 @@ class Pesaway
         
 		//Base URL for the API endpoints. This is basically the 'common' part of the API endpoints
          
-		$this->consumer_key = config('mpesa.consumer_key'); 	//App Key. This is supplied by PesaWay
+		$this->consumer_key = config('pesaway.consumer_key'); 	//App Key. This is supplied by PesaWay
          
-		$this->consumer_secret = config('mpesa.consumer_secret'); 					//App Secret Key. This is supplied by PesaWay
-        $this->paybill =config('mpesa.paybill'); 									//The paybill/till/lipa na mpesa number that is integrated by PesaWay
+		$this->consumer_secret = config('pesaway.consumer_secret'); 					//App Secret Key. This is supplied by PesaWay
+        $this->paybill =config('pesaway.paybill'); 									//The paybill/till/lipa na mpesa number that is integrated by PesaWay
        
     }
 	
