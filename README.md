@@ -42,14 +42,14 @@ Edit the ```Config/config.php``` file and edit the following:
 Trigger payment as follows:
 
 ```php
-	$paymentResponse=Pesaway::pay_bill(100, '254708374149', '10');
+	$paymentResponse=Pesaway::pay_bill(100, '254700xxxxxx', '10');
 ```
 
 ### Verify Manual Payment
 Verify a payment that's been sent to the paybill as follows:
 
 ```php
-	$verifyPaymentResponse=Pesaway::verify_payment(100, '254708374149', 'OBJ69DM0JD');
+	$verifyPaymentResponse=Pesaway::verify_payment(100, '254700xxxxxx', 'OBJ69DM0JD');
 ```
 
 ### Testing
