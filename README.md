@@ -14,11 +14,42 @@ You can install the package via composer:
 ```bash
 composer require sammy-kariuki/pesaway
 ```
+## Configuration
+
+Edit the ```Config/config.php``` file and edit the following:
+```php
+	/*-----------------------------------------
+	|The App consumer key
+	|------------------------------------------
+	*/
+	'consumer_key'   => '',
+
+	/*-----------------------------------------
+	|The App consumer Secret
+	|------------------------------------------
+	*/
+	'consumer_secret' => '',
+
+	/*-----------------------------------------
+	|The paybill number
+	|------------------------------------------
+	*/
+	'paybill'         => ''
+```
 
 ## Usage
+### Trigger Payment
+Trigger payment as follows:
 
-``` php
-// Usage description here
+```php
+	$paymentResponse=Pesaway::pay_bill(100, '254708374149', '10');
+```
+
+### Verify Manual Payment
+Verify a payment that's been sent to the paybill as follows:
+
+```php
+	$verifyPaymentResponse=Pesaway::verify_payment(100, '254708374149', 'OBJ69DM0JD');
 ```
 
 ### Testing
