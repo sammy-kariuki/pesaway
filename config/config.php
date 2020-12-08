@@ -1,8 +1,26 @@
 <?php
 
 /*
- * You can place your custom package configuration in here.
+ * custom package configurations
  */
 return [
+
+    /*-----------------------------------------
+    |The App consumer key
+    |------------------------------------------
+    */
+    'consumer_key'   => '',
+
+    /*-----------------------------------------
+    |The App consumer Secret
+    |------------------------------------------
+    */
+    'consumer_secret' => '',
+
+    /*-----------------------------------------
+    |The paybill number
+    |------------------------------------------
+    */
+    'paybill'         => ''
 
 ];

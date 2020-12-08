@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/sammy-kariuki/pesaway.svg?style=flat-square)](https://scrutinizer-ci.com/g/sammy-kariuki/pesaway)
 [![Total Downloads](https://img.shields.io/packagist/dt/sammy-kariuki/pesaway.svg?style=flat-square)](https://packagist.org/packages/sammy-kariuki/pesaway)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+This is a Laravel Package for PesaWay Limited's payment API.
 
 ## Installation
 
@@ -47,7 +47,3 @@ If you discover any security related issues, please email ksammy91@gmail.com ins
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
