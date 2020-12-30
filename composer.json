@@ -16,7 +16,7 @@
         }
     ],
 	"minimum-stability": "stable",
-	  "require": {
+	 "require": {
 		"php": ">=7",
 		"illuminate/support": "^5.5|^6.0|^7.0"
 	},
@@ -32,10 +32,10 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
-
-    },
+		"post-update-cmd": [
+		  "php artisan vendor:publish --tag=pesaway --force"
+		]
+	},
     "config": {
         "sort-packages": true
     },
