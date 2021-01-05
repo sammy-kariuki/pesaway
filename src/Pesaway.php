@@ -66,14 +66,12 @@ class Pesaway
 	
 	public function pay_bill($amount, $phone, $order_id)
     {
-        //this function will set b2c credentials
-        $this->setCred();
-        $request_data = array
+        $request_data = array(
             'amount' => $amount,
             'order_id' => $order_id,
             'phone_number' => $phone,
-            'consumer_key' => $remarks,
-            'consumer_secret' => $this->consumer_key
+            'consumer_key' => $this->consumer_key,
+            'consumer_secret' => $this->consumer_secret
         );
         $data = json_encode($request_data);
         $url = $this->base_url.'process-checkout-payment/';
@@ -83,18 +81,16 @@ class Pesaway
 	
 	public function verify_payment($amount, $phone, $payment_receipt)
     {
-        //this function will set b2c credentials
-        $this->setCred();
-        $request_data = array
+        $request_data = array(
             'amount' => $amount,
             'payment_receipt' => $payment_receipt,
 			'paybill_number' => $this->paybill,
             'phone_number' => $phone,
-            'consumer_key' => $remarks,
-            'consumer_secret' => $this->consumer_key
+            'consumer_key' => $this->consumer_key,
+            'consumer_secret' => $this->consumer_secret
         );
         $data = json_encode($request_data);
-        $url = $this->base_url.'process-checkout-payment/';
+        $url = $this->base_url.'process-checkout-payment-confirm/';
         $response = $this->submit_request($url, $data);
         return $response;
     }
