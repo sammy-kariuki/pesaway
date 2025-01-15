@@ -38,7 +38,7 @@ class Pesaway
 
     public function __construct()
     {
-        $this->base_url = 'https://engine.pesaway.com/api/epayments/';
+        $this->base_url = 'https://api.pesaway.com/api/mobile/epayments/';
         
 		//Base URL for the API endpoints. This is basically the 'common' part of the API endpoints
          
